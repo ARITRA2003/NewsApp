@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 
 import LoadingBar from 'react-top-loading-bar'
+import About from './components/About';
 
 
 const App=()=>{
@@ -57,6 +58,10 @@ const App=()=>{
             <Route
               path="/technology"
               element={<News  apikey={apikey} setProgress={setProgress} key="technology" pageSize={pageSize} country={"us"} category="technology" />}
+            />
+            <Route
+              path="/about"
+              element={<About />}
             />
           </Routes>
         </BrowserRouter>

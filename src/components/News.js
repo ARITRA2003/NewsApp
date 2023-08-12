@@ -97,7 +97,7 @@ const News = (props) => {
             hasMore={articles.length !==totalResults}
             loader={<Spinner />}
         >
-            <h1 className="text-center" style={{marginTop:"80px"}}><u><strong>Top headlines</strong></u></h1>
+            <h1 className="text-center" style={{marginTop:"80px"}}><u><strong>Top headlines - {toUpper(props.category)}</strong></u></h1>
             {loading && <Spinner />}
             <div className="container">
                 <div className="row my-3">
